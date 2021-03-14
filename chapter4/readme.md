@@ -97,9 +97,8 @@ console.log(score);
 var score = undefined;
 console.log(score); //undefined
 score = 80;         //80
-score = undefined;  //undefined
 
-console.log(score); //undefined
+console.log(score); //80
 ```
 
 ## 4.6 값의 재할당
