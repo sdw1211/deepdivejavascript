@@ -28,6 +28,7 @@ console.log(typeof x, x);       //number 10
 ## 9.2 암묵적 타입 변환
 
 * 암묵적 타입 변환이 발생하면 문자열, 숫자, 불리언과 같은 원시 타입 중 하나로 타입을 자동 변환한다.
+* https://262.ecma-international.org/12.0/#sec-applystringornumericbinaryoperator
 
 ### 9.2.1 문자열 타입으로 변환
 
@@ -37,6 +38,7 @@ console.log(typeof x, x);       //number 10
 
 * `+`연산자는 피연산자 중 하나 이상의 문자열인 경우 문자열 연결 연산자로 동작한다.
 * 문자열 연결 연산자인 경우 문자열끼리 연결해야 하기 때문에 피연산자 중 문자열이 아닌 경우에 자바스크립트 엔진에서 문자열로 암묵적인 타입 변환을 시도한다.
+* https://262.ecma-international.org/12.0/#prod-AdditiveExpression
 
 ### 9.2.2 숫자 타입으로 변환
 
@@ -86,6 +88,7 @@ if (null) console.log('5'); //false
    * ''
    * NaN
 * 위 Falsy 값을 제외하고는 전두 Truthy 값이다.
+* https://262.ecma-international.org/12.0/#prod-IfStatement
 
 ## 9.3 명시적 타입 변환
 
@@ -107,6 +110,8 @@ String(1);          //"1"
 2. parseInt, parseFloat 함수를 사용하는 방법(문자열만 가능)
 3. + 단항 산술 연산자를 이용하는 방법
 4. * 산술 연산자를 사용하는 방법
+5. https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+6. https://thisthat.dev/number-constructor-vs-parse-int/
 
 ```javascript
 Number('1');            //1
